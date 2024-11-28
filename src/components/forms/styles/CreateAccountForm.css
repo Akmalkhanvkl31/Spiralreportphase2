@@ -1,0 +1,279 @@
+/* Form Container */
+.signup-form-container {
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Progress Bar */
+.progress-container {
+  margin-bottom: 2rem;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #4B5563;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #E5E7EB;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #EF4444;
+  transition: width 300ms ease-out;
+}
+
+/* Form Header */
+.signup-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.signup-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.signup-subtitle {
+  color: #4B5563;
+}
+
+/* Form Fields */
+.form-field {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.field-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+  border: 1px solid #D1D5DB;
+  border-radius: 0.5rem;
+  transition: all 200ms;
+}
+
+.field-input:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #EF4444;
+  border-color: transparent;
+}
+
+.field-input.error {
+  border-color: #EF4444;
+}
+
+.field-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9CA3AF;
+}
+
+/* Phone Input Customization */
+.phone-input-container {
+  position: relative;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background: white;
+}
+
+.phone-input:focus-within {
+  border-color: #EF4444;
+  box-shadow: 0 0 0 1px #EF4444;
+}
+
+.phone-input-country {
+  margin-right: 0.5rem;
+  padding-right: 0.5rem;
+  border-right: 1px solid #E5E7EB;
+}
+
+.phone-input-number {
+  border: none;
+  padding: 0.25rem;
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+/* Password Validation */
+.password-requirements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.requirement-indicator {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.requirement-valid {
+  background-color: #DEF7EC;
+  color: #057A55;
+}
+
+.requirement-invalid {
+  background-color: #F3F4F6;
+  color: #6B7280;
+}
+
+/* Error and Success Messages */
+.message {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.error-message {
+  background-color: #FEE2E2;
+  border: 1px solid #FCA5A5;
+  color: #DC2626;
+}
+
+.success-message {
+  background-color: #DEF7EC;
+  border: 1px solid #84E1BC;
+  color: #057A55;
+}
+
+/* Navigation Buttons */
+.button-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.nav-button {
+  flex: 1;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 300ms;
+}
+
+.back-button {
+  background-color: white;
+  border: 1px solid #D1D5DB;
+  color: #374151;
+}
+
+.back-button:hover {
+  background-color: #F9FAFB;
+}
+
+.next-button {
+  background-color: #EF4444;
+  color: white;
+}
+
+.next-button:hover:not(:disabled) {
+  background-color: #DC2626;
+}
+
+.next-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Google Sign In */
+.google-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem;
+  border: 2px solid #D1D5DB;
+  border-radius: 0.5rem;
+  background-color: white;
+  color: #374151;
+  transition: background-color 300ms;
+}
+
+.google-button:hover {
+  background-color: #F9FAFB;
+}
+
+/* Divider */
+.divider-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #E5E7EB;
+}
+
+.divider-text {
+  font-size: 0.875rem;
+  color: #6B7280;
+}
+
+/* Loading Animation */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Sign In Link */
+.signin-link {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #4B5563;
+  margin-top: 1.5rem;
+}
+
+.signin-link button {
+  color: #EF4444;
+  font-weight: 500;
+}
+
+.signin-link button:hover {
+  color: #DC2626;
+}

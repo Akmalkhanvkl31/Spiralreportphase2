@@ -1,0 +1,35 @@
+/* Tailwind base styles */
+@tailwind base;
+
+/* Tailwind components */
+@tailwind components;
+
+/* Tailwind utility classes */
+@tailwind utilities;
+
+/* 1. Set default cursor globally */
+/* 1. Set the default cursor (arrow) for the entire page */
+/* 1. Set the default cursor (arrow) for the entire page */
+html, body {
+    cursor: default !important; /* Arrow cursor for all non-interactive elements */
+    user-select: none; /* Prevent selection on non-interactive elements */
+  }
+  
+  /* 2. Enable the blinking text cursor (caret) only on form elements when focused */
+  input:focus, textarea:focus, select:focus, button:focus {
+    cursor: text !important; /* Blinking text cursor on input fields */
+  }
+  
+  /* 3. Prevent cursor from changing to text on non-interactive elements (headings, images, etc.) */
+  h1, h2, h3, h4, h5, h6, p, div, span, img, footer, header, section, main, aside {
+    cursor: default !important; /* Arrow cursor on non-editable elements */
+    user-select: none; /* Prevent selection on these elements */
+  }
+  
+  /* 4. Ensure links (<a>) show the pointer cursor */
+  a {
+    cursor: pointer !important; /* Pointer cursor on links */
+  }
+  
+  
+  

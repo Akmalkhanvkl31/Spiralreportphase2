@@ -1,0 +1,240 @@
+/* Report Page Layout */
+.report-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 32px 32px;
+    background: linear-gradient(145deg, #f8fafc, #ffffff);
+    min-height: 100vh;
+  }
+  
+  .flex-container {
+    display: flex;
+    gap: 32px;
+  }
+  
+  @media (max-width: 1024px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  
+  /* Header Section */
+  .header-section {
+    margin-bottom: 48px;
+  }
+  
+  .header-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #111827;
+  }
+  
+  .red-text {
+    color: #EF4444;
+  }
+  
+  .description {
+    color: #4B5563;
+    max-width: 56rem;
+  }
+  
+  /* Chart Section */
+  .chart-section {
+    margin-bottom: 64px;
+  }
+  
+  .chart-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .infinity-symbol {
+    font-size: 24px;
+  }
+  
+  .chart-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 16px;
+  }
+  
+  .chart-container {
+    height: 400px;
+    width: 100%;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 360px;
+    flex-shrink: 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
+  /* Card Styles */
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.1);
+  }
+  
+  .card-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+  }
+  
+  .card-subtitle {
+    font-size: 14px;
+    color: #6B7280;
+  }
+  
+  /* Progress Styles */
+  .progress-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 40px;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .progress-percentage {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  .progress-label {
+    font-size: 14px;
+    color: #6B7280;
+    margin-top: 4px;
+  }
+  
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05));
+    margin: 24px 0;
+  }
+  
+  /* Categories Section */
+  .categories-section {
+    padding: 0 8px;
+  }
+  
+  .categories-header {
+    margin-bottom: 24px;
+  }
+  
+  .categories-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 4px;
+  }
+  
+  .categories-subtitle {
+    font-size: 13px;
+    color: #6B7280;
+  }
+  
+  .category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    background: linear-gradient(to right, rgba(239, 68, 68, 0.03), transparent);
+    border: 1px solid rgba(239, 68, 68, 0.08);
+  }
+  
+  .category-label {
+    font-size: 14px;
+    color: #4B5563;
+  }
+  
+  .category-score {
+    font-size: 18px;
+    font-weight: 600;
+    color: #EF4444;
+  }
+  
+  /* Snapshot Section */
+  .snapshot-section {
+    background: #ffffff;
+    padding: 64px 0;
+  }
+  
+  .snapshot-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  
+  .snapshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 0 32px;
+  }
+  
+  /* Recommendation Section */
+  .recommendation-section {
+    background: #f9fafb;
+    padding: 80px 0;
+  }
+  
+  .recommendation-header {
+    text-align: center;
+    margin-bottom: 48px;
+    color: #ffffff;
+    background: linear-gradient(to right, #ef4444, #dc2626);
+    padding: 48px 0;
+  }
+  
+  .recommendation-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  
+  .recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  
+  .recommendation-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .recommendation-card:hover {
+    transform: translateY(-4px);
+  }

@@ -1,0 +1,212 @@
+/* Form Container */
+.login-form-container {
+  width: 100%;
+  max-width: 28rem; /* max-w-md */
+}
+
+/* Form Header */
+.login-header {
+  text-align: center;
+}
+
+.login-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #111827;
+}
+
+.login-subtitle {
+  font-size: 0.875rem;
+  color: #4B5563;
+}
+
+/* Form Fields */
+.form-field {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.field-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.field-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+  border: 1px solid #D1D5DB;
+  border-radius: 0.5rem;
+  transition: all 200ms;
+}
+
+.field-input:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #EF4444;
+  border-color: transparent;
+}
+
+.field-input.error {
+  border-color: #EF4444;
+}
+
+.field-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9CA3AF;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9CA3AF;
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  color: #4B5563;
+}
+
+/* Error Message */
+.error-message {
+  font-size: 0.875rem;
+  color: #EF4444;
+  margin-top: 0.25rem;
+}
+
+/* Remember Me & Forgot Password */
+.form-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  color: #EF4444;
+  accent-color: #EF4444;
+}
+
+.remember-me label {
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.forgot-password {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #EF4444;
+}
+
+.forgot-password:hover {
+  color: #DC2626;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 0.625rem;
+  background-color: #EF4444;
+  color: white;
+  border-radius: 0.5rem;
+  transition: all 300ms;
+}
+
+.submit-button:not(:disabled):hover {
+  background-color: #DC2626;
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Divider */
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #E5E7EB;
+}
+
+.divider span {
+  position: relative;
+  background-color: white;
+  padding: 0 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+}
+
+/* Google Sign In Button */
+.google-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem;
+  border: 1px solid #D1D5DB;
+  border-radius: 0.5rem;
+  color: #374151;
+  transition: background-color 300ms;
+}
+
+.google-button:hover:not(:disabled) {
+  background-color: #F9FAFB;
+}
+
+/* Sign Up Link */
+.signup-link {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #4B5563;
+}
+
+.signup-link button {
+  color: #EF4444;
+  font-weight: 500;
+}
+
+.signup-link button:hover {
+  color: #DC2626;
+}
+
+/* Loading Animation */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
